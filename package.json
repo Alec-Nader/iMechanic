@@ -1,0 +1,17 @@
+{
+  "name": "imechanic",
+  "version": "1.0.0",
+  "description": "Car maintenance organization",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alec Nader, Taylor Gill, Ryan Gigliotti",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1"
+  }
+}
