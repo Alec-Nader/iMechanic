@@ -1,0 +1,80 @@
+:root {
+    --lightblue: #3399ff;
+  }
+   
+  a,
+  a:hover {
+    color: inherit;
+  }
+   
+  a:hover {
+    text-decoration: none;
+  }
+   
+  .bg-lightblue {
+    background: var(--lightblue);
+  }
+   
+  .container-fluid-max {
+    max-width: 1440px;
+  }
+   
+  .cover {
+    background: no-repeat center/cover;
+  }
+   
+  .p-15 {
+    padding: 15px;
+  }
+  .text-blue{
+      color:#3399ff;
+  }
+
+.scroll .page-header {
+    background: #3399ff;
+  }
+   
+  .page-header {
+    transition: background 0.5s ease-in-out;
+  }
+   
+  .page-header .navbar {
+    padding: 1rem 0;
+  }
+   
+  .page-header .navbar-toggler {
+    border-color: var(--white); 
+  }
+   
+  @media screen and (max-width: 991px) {
+    .page-header {
+      background: #3399ff;
+    }
+  }
+  .scroll .hero {
+    transform: scale(0.98);
+  }
+   
+  .hero {
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+  }
+   
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  }
+   
+  .hero .container-fluid {
+    z-index: 10;
+  }
+  
