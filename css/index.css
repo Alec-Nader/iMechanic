@@ -34,9 +34,7 @@ body {
 }
 
 @media (min-width: 600px) { 
-  /* #sidebar-wrapper .sidebar-heading {
-    display:none !important;
-  } */
+  
   #sidebar-wrapper {
     margin-left: 0;
   }
@@ -48,5 +46,10 @@ body {
 
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -12rem;
+  }
+}
+@media (max-width:600px){
+  #wrapper .sidebar-heading {
+    display:none !important;
   }
 }
