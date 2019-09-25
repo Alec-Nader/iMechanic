@@ -49,7 +49,14 @@
                         ],
                 dateClick: function(info) {
                    alert('Date: ' + info.dateStr);
+                   calendar.addEvent({
+                title: 'dynamic event',
+                start: date,
+                allDay: true
+              });
                 }
+                
+
 
 
               });
