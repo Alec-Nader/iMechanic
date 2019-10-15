@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>iMechanic</title>
+
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="../css/index.css" rel="stylesheet">
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href= "../lib/fontawesome-free/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link href='../lib/fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='../lib/fullcalendar/daygrid/main.css' rel='stylesheet' />
+
+    <script src='../lib/fullcalendar/core/main.js'></script>
+    <script src='../lib/fullcalendar/daygrid/main.js'></script>
+    <script src='../lib/fullcalendar/interaction/main.js'></script>
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+              var calendarEl = document.getElementById('calendar');
+      
+              var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: [ 'dayGrid', 'interaction' ],
+                events: [
+                          { 
+                            title: 'Maintenance', 
+                            start: '2019-10-01T12:30:00Z', 
+                            end: '2019-10-06T12:30:00Z',
+                            textColor: 'white',
+                          },
+                          { 
+                            title: 'Windshield Wipers', 
+                            start: '2019-10-11T14:00:00Z', 
+                            end: '2019-10-11',
+                            textColor: 'white', 
+                          },
+                          { 
+                            title: 'Timing belt replacement', 
+                            start: '2019-10-17', 
+                            end: '2019-10-18',
+                            textColor: 'white',
+                          },
+                        ],
+                dateClick: function(info) {
+                  var title =  prompt('Input event(Ex. 10:30am Maintenance):  ');
+                  console.log(title);
+                  if(title != undefined || title != null || title ==""){
+                    calendar.addEvent({
+                         title: title,
+                         start: info.date,
+                         allDay: true
+                       });
+                  }
+                  }
+                
+                
+
+
+
+              });
+      
+              calendar.render();
+            });
+      
+          </script>
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+    <!-- Side nav -->
+    <div class="border-right" id="sidebar-wrapper">
+      <div id = "indexHeader" class="sidebar-heading h1" style="color:grey;">
+        <i class="fas fa-tools fa-2x" style="color:#3399ff"aria-hidden="true"></i> 
+        <br>
+        iMechanic 
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="./index.html" class="list-group-item list-group-item-action pr-3">  <i class="fas fa-home float-right fa-fw" title="Home"></i>Home</a>
+        <a href="./vehicleLog.html" class="list-group-item list-group-item-action pr-3">   <i class="fas fa-book float-right fa-fw" title="Vehicle Log"></i>Vehicle Log</a>
+        <a href="./statistics.html" class="list-group-item list-group-item-action pr-3">   <i class="far fa-chart-bar float-right fa-fw" title = "Statistics"></i>Statistics</a>
+        <a href="#" class="list-group-item list-group-item-action pr-3">   <i class="fas fa-search-location float-right fa-fw" title = "Find a mechanic"></i>Find a Mechanic</a>
+        <a href="./calendar.html" class="list-group-item list-group-item-action pr-3">   <i class="far fa-calendar-alt float-right fa-fw" title = "Statistics"></i>Calendar</a>
+        <a href="#" class="list-group-item list-group-item-action pr-3"></a>
+      </div>
+    </div>
+    <!-- /#side nav -->
+
+    <!-- Body -->
+    <div id="page-content-wrapper">
+
+      <div class="border-bottom p-3">
+
+        <button class="btn" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <button class="btn float-right">
+          <i class="far fa-user-circle fa-fw fa-2x"></i>
+        </button>
+
+        <div id = "userName"class="float-right p-2">
+          <p>John Doe</p>
+        </div>
+      </div>
+
+      <div class="container-fluid ">
+        <div id='calendar' class="p-5 border-primary"></div>
+        
+      </div>
+    </div>
+   
+    <!-- Body end -->
+
+  </div>
+
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/global.js"></script>
+
+</body>
+
+</html>

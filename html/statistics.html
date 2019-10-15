@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>iMechanic</title>
+
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="../css/index.css" rel="stylesheet">
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href= "../lib/fontawesome-free/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link href="../css/card.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css" rel="stylesheet"/>
+
+  
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+    <!-- Side nav -->
+    <div class="border-right" id="sidebar-wrapper">
+      <div id = "indexHeader" class="sidebar-heading h1" style="color:grey;">
+        <i class="fas fa-tools fa-2x" style="color:#3399ff"aria-hidden="true"></i> 
+        <br>
+        iMechanic 
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="./index.html" class="list-group-item list-group-item-action pr-3">  <i class="fas fa-home float-right fa-fw" title="Home"></i>Home</a>
+        <a href="./vehicleLog.html" class="list-group-item list-group-item-action pr-3">   <i class="fas fa-book float-right fa-fw" title="Vehicle Log"></i>Vehicle Log</a>
+        <a href="./statistics.html" class="list-group-item list-group-item-action pr-3">   <i class="far fa-chart-bar float-right fa-fw" title = "Statistics"></i>Statistics</a>
+        <a href="./findMechanic.html" class="list-group-item list-group-item-action pr-3">   <i class="fas fa-search-location float-right fa-fw" title = "Find a Mechanic"></i>Find a Mechanic</a>
+        <a href="./calendar.html" class="list-group-item list-group-item-action pr-3">   <i class="far fa-calendar-alt float-right fa-fw" title = "Calendar"></i>Calendar</a>
+        <a href="#" class="list-group-item list-group-item-action pr-3"></a>
+      </div>
+    </div>
+    <!-- /#side nav -->
+
+    <!-- page wrapper -->
+    <div id="page-content-wrapper">
+
+      <div class="border-bottom p-3">
+
+        <button class="btn" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <button class="btn float-right">
+          <i class="far fa-user-circle fa-fw fa-2x"></i>
+        </button>
+
+        <div id = "userName"class="float-right p-2">
+          <p>John Doe</p>
+        </div>
+      </div>
+      <!-- Main container-->
+      <div class="container-fluid pt-4">
+        <!-- vehicle header-->
+       <div class="row pb-3">
+
+          <div class="col">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col text-center">
+                      <h5 class="card-title text-uppercase text-muted mb-3">Vehicle Make:</h5>
+                      <span class="h2 font-weight-bold mb-0">Toyota</span>
+                    </div>
+                    <div class="col text-center">
+                        <h5 class="card-title text-uppercase text-muted mb-3">Vehicle Model:</h5>
+                        <span class="h2 font-weight-bold mb-0">Camry</span>
+                      </div>
+                      <div class="col text-center">
+                          <h5 class="card-title text-uppercase text-muted mb-3">Vehicle Year:</h5>
+                          <span class="h2 font-weight-bold mb-0">2018</span>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+       </div> <!--close vehicle header-->
+        
+        <div class="row">
+          <!-- Miles card-->
+          <div class="col-xl-3 col-lg-6">
+            <div class="card card-stats mb-4 mb-xl-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col pr-0">
+                    <h5 class="card-title text-uppercase text-muted mb-3">Total Miles:</h5>
+                    <span class="h2 font-weight-bold mb-0">55,300<br> Miles</span>
+                  </div>
+                  <div class="col-auto">
+                    <div class="icon icon-shape bg-primary text-white rounded-circle shadow">
+                        <i class="fas fa-road"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- Inspection Card-->
+         <div class="col-xl-3 col-lg-6">
+            <div class="card card-stats mb-4 mb-xl-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col pr-0">
+                    <h5 class="card-title text-uppercase text-muted mb-3">Inspections:</h5>
+                    <span class="h2 font-weight-bold mb-0">7<br> Visits</span>
+                  </div>
+                  <div class="col-auto">
+                    <div class="icon icon-shape text-white rounded-circle shadow bg-primary">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Repair card-->
+            <div class="col-xl-3 col-lg-6">
+                <div class="card card-stats mb-4 mb-xl-0">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col pr-0">
+                        <h5 class="card-title text-uppercase text-muted mb-3">Total Repair cost:</h5>
+                        <span class="h2 font-weight-bold mb-0">$12,000<br> Dollars</span>
+                      </div>
+                      <div class="col-auto">
+                        <div class="icon icon-shape bg-primary text-white rounded-circle shadow">
+                            <i class="far fa-money-bill-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          <!-- maintenance card-->
+          <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col pr-0">
+                      <h5 class="card-title text-uppercase text-muted mb-3">Repairs:</h5>
+                      <span class="h2 font-weight-bold mb-0">3<br> Repairs</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-primary text-white rounded-circle shadow">
+                            <i class="fas fa-tools"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+      </div> <!-- Close card row-->
+
+      <!-- Vehicle progress row-->
+      <div class="row pt-3"> 
+        <div class="col-lg-6"> <!-- Line Graph-->
+            <div class="card card-stats mb-4 mb-xl-0">
+                <canvas id="line-chart" width="200" height="100"></canvas>
+            </div>    
+        </div>
+
+        <div class="col-lg-6"> <!-- DoughnutGraph-->
+          <div class="card card-stats mb-4 mb-xl-0">
+              <canvas id="doughnut-chart" width="200" height="100"></canvas>
+          </div>  
+       </div>  
+    </div> 
+
+    <div class="row pt-3"> <!-- Graph row 2--> 
+        <div class="col-lg-6"> <!-- scatter Graph-->
+          <div class="card card-stats mb-4 mb-xl-0">
+              <canvas id="scatter-chart" width="200" height="100"></canvas>
+          </div>    
+      </div>
+
+      <div class="col-lg-6"> <!-- bar Graph-->
+        <div class="card card-stats mb-4 mb-xl-0">
+            <canvas id="bar-chart" width="200" height="100"></canvas>
+        </div>    
+    </div>
+    </div>
+
+
+    </div><!-- End main container-->
+
+  </div><!-- end page wrapper-->
+
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/global.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+  <script src="../js/statistics.js"></script>
+</body>
+
+</html>
