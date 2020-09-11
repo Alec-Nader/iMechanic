@@ -1,6 +1,6 @@
 # iMechanic
 Senior design course front-end project
 
-These are general mock-ups on how iMechanic will be designed in the future.
+This is the front-end design for iMechanic. Our full repository for iMechanic is private but you can view our website here: https://imechanic-dev.com/html/landing.html
 
-Currently this project is out of date and our current web application project is in a private repository. Contact me for more information.
+
